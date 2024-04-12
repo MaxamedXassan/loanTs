@@ -1,7 +1,7 @@
 
-// import CustomerForm from "./components/CustomerForm";
+
 import Link from 'next/link'
-// import { CustomerList } from './components/CustomerList';
+
 import prisma from "./db";
 import CustomerList from './components/CustomerList';
 
@@ -19,7 +19,6 @@ export default async function Home() {
      <ul className="pl-4">
       {customers.map(customer => (
         <CustomerList key={customer.id} {...customer} />
-        // <CustomerList key={customer.id} {...customer}/>
       ))}
     </ul>
     </div>
